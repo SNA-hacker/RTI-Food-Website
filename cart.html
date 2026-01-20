@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTI FOOD</title>
+    <link rel="stylesheet" href="rtiStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!--NavBar-->
+    <nav id="navbar">
+        <h1><a id="nav-logo" href="index.html">RTI FÓOD</a></h1>
+        <button id="hamburger">
+           <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="nav-items-right">
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html" class="active">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+            </div>
+    </nav>
+
+
+    <!--Cart-hero-->
+    <section id="cart-hero">
+        <div id="cart-hero-text">
+          <h1>Your Shopping Cart</h1>
+          <p>Preview your items before checkout.</p>
+        </div>
+    </section>
+
+    <!--Cart Items Section-->
+    <section id="cart-empty">
+        <h2>Cart Items</h2>
+       <p>Your cart is currently empty.</p>
+       <a href="index.html" class="btn">Continue Shopping</a>
+    </section>
+
+    <section id="cart-container" class="hidden">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+    
+</body>
+
+<!--Shopping Summary-->
+<section id="cart-summary">
+  <h2>Order Summary</h2>
+  <p>Subtotal: <span id="subtotal">$0</span></p>
+  <p>Shipping: <span>Free</span></p>
+  <p><strong>Total: <span id="total">$0</span></strong></p>
+  <a  class="btn disabled">Proceed to Checkout</a>
+</section>
+
+
+<!--Footer-->
+<footer id="footer">
+    <div class="footer-link">
+        <h3>RTI FÓOD</h3>
+        <p>Delicious food, delivered fresh and fast.</p>
+    </div>
+
+    <div class="footer-link">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Special Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h4>Contact Us</h4>
+      <p>📍 786 Street#15 Chakwal</p>
+      <p>📞 +123 456 7890</p>
+      <p>📧 info@rtiFood.com</p> 
+    </div>
+
+    <div class="footer-social">
+         <h4>Follow Us</h4>
+       <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+</footer>
+    <div id="footer-bottom">
+   <p>© 2025 RTI FOOD. All Rights Reserved.</p>
+</div>
+
+<script src="rti.js"></script>
+</html>

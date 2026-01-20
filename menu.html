@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="rtiStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!--NavBar-->
+    <nav id="navbar">
+        <h1><a id="nav-logo" href="index.html">RTI FÓOD</a></h1>
+        <button id="hamburger">
+           <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="nav-items-right">
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--Our Menu-->
+    <section id="menu">
+        <h1>Our Menu</h1>
+        <p>Delicious meals made fresh for you. Choose from burgers, pizzas, biryanis, and more.</p>
+        <input id="input-menu" placeholder="Search your favorite food..">
+        <div id="filter-buttons">
+            <button>All</button>
+            <button>Burger</button>
+            <button>Pizza</button>
+            <button>Shawarma</button>
+            <button>Fries</button>
+            <button>Biryani</button>
+            <button>Drink</button>  
+        </div>
+    </section>
+    <!--Dishes-->
+    <section id="All-dishes">
+        <div class="product  dish burger">
+            <img class="product-img" src="AllDishes/classic-Beef-Burger.jpg"  alt="Zinger ChickenBurger" >
+            <h3  class="product-name">Classic Beef Burger</h3>
+            <p class="desc">Juicy beef patty with lettuce, tomato, cheese, and special sauce.</p>
+            <p class="product-price">$5.50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish burger">
+            <img class="product-img" src="AllDishes/zinger-burgerjpg.jpg" alt="Zinger-Burger">
+            <h3  class="product-name">Zinger Chicken Burger</h3>
+            <p class="desc">Crispy fried chicken fillet with mayo and crunchy lettuce.</p>
+            <p class="product-price">$6.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish pizza">
+            <img class="product-img" src="AllDishes/Chicken-Pizza.jpg" alt="Chicken Supreme Pizza" >
+            <h3 class="product-name">Chicken Supreme Pizza</h3>
+            <p class="desc">Loaded with cheese, spicy chicken chunks, and fresh veggies.</p>
+            <p class="product-price">$8.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish pizza">
+            <img class="product-img" src="AllDishes/pepperoni-pizza.jpg" alt="Pepperoni-pizza" >
+            <h3  class="product-name">Pepperoni Pizza</h3>
+            <p class="desc">Classic cheesy pizza topped with pepperoni slices.</p>
+            <p class="product-price">$9.50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish biryani">
+            <img class="product-img " src="AllDishes/Chicken-biryani.jpg" alt="Chicken-biryani" >
+            <h3  class="product-name">Chicken Biryani</h3>
+            <p class="desc">Aromatic basmati rice cooked with tender chicken and spices.</p>
+            <p class="product-price">$7.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish biryani">
+            <img class="product-img" src="AllDishes/beef-biryani.jpg" alt="Beef Biryani" >
+            <h3  class="product-name">Beef Biryani</h3>
+            <p class="desc">Flavorful rice with slow-cooked beef and rich masala.</p>
+            <p class="product-price">$8.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish shawarma">
+            <img class="product-img" src="AllDishes/chicken-shawarma.jpg" alt="Chicken Shawarma Roll" >
+            <h3 class="product-name">Chicken Shawarma Roll</h3>
+            <p class="desc">Marinated chicken wrapped in pita with garlic sauce and veggies.</p>
+            <p class="product-price">$4.50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish shawarma">
+            <img class="product-img" src="AllDishes/beef-shawarma.jpg" alt="Beef Shawarma" >
+            <h3 class="product-name">Beef Shawarma Roll</h3>
+            <p class="desc">Spiced beef strips with tahini sauce in a soft wrap.</p>
+            <p class="product-price">$5.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish fries">
+            <img class="product-img" src="AllDishes/masala-fries.jpg" alt="Masala-fries" >
+            <h3 class="product-name">Masala Fries</h3>
+            <p class="desc">Crispy fries tossed with tangy masala seasoning.</p>
+            <p class="product-price">$2.50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish fries">
+            <img class="product-img" src="AllDishes/cheese-fries.jpg" alt="cheese-fries" >
+            <h3 class="product-name">Cheese Fries</h3>
+            <p class="desc">Golden fries topped with melted cheese and herbs.</p>
+            <p class="product-price">$3.50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish drink">
+            <img class="product-img" src="AllDishes/cold-drink.jpg"  alt="Cold Drink">
+            <h3 class="product-name">Cold Drink (500ml)</h3>
+            <p class="desc">Chilled soft drink to refresh your meal.</p>
+            <p class="product-price">$1.50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product  dish drink">
+            <img class="product-img" src="AllDishes/mango-juice.jpg" alt="mango-juice" >
+            <h3 class="product-name">Fresh Mango Juice</h3>
+            <p class="desc">Sweet, fresh mango juice served cold.</p>
+            <p class="product-price">$2.50</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+    <div class="footer-link">
+        <h3>RTI FÓOD</h3>
+        <p>Delicious food, delivered fresh and fast.</p>
+    </div>
+
+    <div class="footer-link">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html">Special Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h4>Contact Us</h4>
+      <p>📍 786 Street#15 Chakwal</p>
+      <p>📞 +123 456 7890</p>
+      <p>📧 info@rtiFood.com</p> 
+    </div>
+
+    <div class="footer-social">
+         <h4>Follow Us</h4>
+       <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">Twitter</a>
+    </div>
+</footer>
+    <div id="footer-bottom">
+   <p>© 2025 RTI FOOD. All Rights Reserved.</p>
+</div>
+</body>
+
+<script src="rti.js"></script>
+</html>
